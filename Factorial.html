@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FACTORIAL PROGRAM</title>
+</head>
+<body bgcolor="orange">
+
+	<h1>***************FACTORIAL***************</h1>
+
+<form>
+Enter Any number: 	 <input type="text" name="txt1" id="t1"><br/><br/>
+Factorial of number: <input type="text" name="tx1" id="t2"><br/><br/>
+<input type="button" onclick="Factorial()" value="  Factorial  "><br/><br/>
+</form>
+
+<script type="text/javascript">
+	
+function Factorial()
+		{
+			var num=document.getElementById("t1").value
+			var fact=1;
+			for (var i = 1; i <=num; i++) {
+				fact=parseInt(fact)*parseInt(i)
+			}
+			document.getElementById("t2").value=fact
+		}
+
+</script>
+
+</body>
+</html>
